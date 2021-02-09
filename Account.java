@@ -5,7 +5,7 @@ package lunvik8;
  * of D0018D, assignment 1.
  * 
  * @author Viktor Lundberg, lunvik-8
- * @since 2021-05-xx
+ * @version 1.0 (2021-02-09)
  */
 
 public class Account {

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Bank utility methods. Part of D0018D, assignment 1.
  * 
  * @author Viktor Lundberg, lunvik-8
- * @since 2021-05-xx
+ * @version 1.0 (2021-02-09)
  */
 
 public class BankLogic {

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Customer class that defines a Customer object. Part of D0018D, assignment 1.
  * 
  * @author Viktor Lundberg, lunvik-8
- * @since 2021-05-xx
+ * @version 1.0 (2021-02-09)
  */
 
 public class Customer {
@@ -90,5 +90,5 @@ public class Customer {
 	public String toStringCustomer() {
 		return (pNo + " " + name + " " + surname);
 	}
-	
+
 }
