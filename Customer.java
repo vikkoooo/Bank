@@ -6,16 +6,16 @@ import java.util.ArrayList;
  * Customer class that defines a Customer object. Part of D0018D, assignment 1.
  * 
  * @author Viktor Lundberg, lunvik-8
- * @version 1.0 (2021-02-09)
+ * @version 1.1 (2021-03-05)
  */
 
-public class Customer {
-
+public class Customer
+{
 	/**
 	 * List of accounts that holds Customer objects own personal accounts. Accounts
 	 * are created through createSavingsAccount method in BankLogic.java
 	 */
-	ArrayList<Account> accountsArrayList = new ArrayList<Account>();
+	private ArrayList<Account> accountsArrayList = new ArrayList<Account>();
 
 	/**
 	 * Instance variables
@@ -31,7 +31,8 @@ public class Customer {
 	 * @param surname (Last name)
 	 * @param pNo     (Personal number)
 	 */
-	public Customer(String name, String surname, String pNo) {
+	public Customer(String name, String surname, String pNo)
+	{
 		this.name = name;
 		this.surname = surname;
 		this.pNo = pNo;
@@ -42,7 +43,8 @@ public class Customer {
 	 * 
 	 * @param name (First name)
 	 */
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 
@@ -51,7 +53,8 @@ public class Customer {
 	 * 
 	 * @param surname (Last name)
 	 */
-	public void setSurname(String surname) {
+	public void setSurname(String surname)
+	{
 		this.surname = surname;
 	}
 
@@ -60,7 +63,8 @@ public class Customer {
 	 * 
 	 * @return name (First name)
 	 */
-	public String getName() {
+	public String getName()
+	{
 		return name;
 	}
 
@@ -69,7 +73,8 @@ public class Customer {
 	 * 
 	 * @return surname (Last name)
 	 */
-	public String getSurname() {
+	public String getSurname()
+	{
 		return surname;
 	}
 
@@ -78,7 +83,8 @@ public class Customer {
 	 * 
 	 * @return pNo (Personal number)
 	 */
-	public String getpNo() {
+	public String getpNo()
+	{
 		return pNo;
 	}
 
@@ -87,8 +93,19 @@ public class Customer {
 	 * 
 	 * @return pNo + name + surname
 	 */
-	public String toStringCustomer() {
+	public String toStringCustomer()
+	{
 		return (pNo + " " + name + " " + surname);
+	}
+
+	/**
+	 * Method is used to get the list of Accounts
+	 * 
+	 * @return the ArrayList with Accounts
+	 */
+	public ArrayList<Account> getAccountsArrayList()
+	{
+		return accountsArrayList;
 	}
 
 }

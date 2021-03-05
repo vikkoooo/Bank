@@ -5,11 +5,11 @@ package lunvik8;
  * of D0018D, assignment 1.
  * 
  * @author Viktor Lundberg, lunvik-8
- * @version 1.0 (2021-02-09)
+ * @version 1.1 (2021-03-05)
  */
 
-public class Account {
-
+public class Account
+{
 	/**
 	 * Class variable. We want an unique accountId for the whole bank, not just for
 	 * the customer.
@@ -27,7 +27,8 @@ public class Account {
 	/**
 	 * Constructor
 	 */
-	public Account() {
+	public Account()
+	{
 		nextAccountId++; // Increment class variable nextAccountId
 		accountId = nextAccountId; // Then set our new account to that Id
 		balance = 0;
@@ -40,7 +41,8 @@ public class Account {
 	 * 
 	 * @param amount to deposit as double
 	 */
-	public void deposit(double amount) {
+	public void deposit(double amount)
+	{
 		balance += amount;
 	}
 
@@ -49,7 +51,8 @@ public class Account {
 	 * 
 	 * @param amount to withdrawal as double
 	 */
-	public void withdrawal(double amount) {
+	public void withdrawal(double amount)
+	{
 		balance -= amount;
 	}
 
@@ -58,7 +61,8 @@ public class Account {
 	 * 
 	 * @return the accountId
 	 */
-	public int getAccountId() {
+	public int getAccountId()
+	{
 		return accountId;
 	}
 
@@ -68,7 +72,8 @@ public class Account {
 	 * @param accountId for the account we want to check
 	 * @return the balance
 	 */
-	public double getBalance(int accountId) {
+	public double getBalance(int accountId)
+	{
 		return balance;
 	}
 
@@ -77,7 +82,8 @@ public class Account {
 	 * 
 	 * @return the interest as double
 	 */
-	public double calculateInterest() {
+	public double calculateInterest()
+	{
 		double interest = balance * rate / 100;
 		return interest;
 	}
@@ -87,7 +93,8 @@ public class Account {
 	 * 
 	 * @return accountId + balance + type + rate
 	 */
-	public String toStringWithRate() {
+	public String toStringWithRate()
+	{
 		return (accountId + " " + balance + " kr " + type + " " + rate + " %");
 	}
 
@@ -96,7 +103,8 @@ public class Account {
 	 * 
 	 * @return accountId + balance + type
 	 */
-	public String toStringWithoutRate() {
+	public String toStringWithoutRate()
+	{
 		return (accountId + " " + balance + " kr " + type + " ");
 	}
 
